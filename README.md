@@ -15,7 +15,7 @@ The purpose of this project is to organise and display data in a useful and cust
 Screenshot
 ----------
 
-![Screenshot](blah.jpg "Screentshot")
+![Screenshot](https://raw.github.com/AmnestyInternational/dashboard/master/lib/screenshot.png "Screentshot")
 
 Install procedure
 -----------------
