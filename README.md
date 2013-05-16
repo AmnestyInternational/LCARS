@@ -1,5 +1,5 @@
-Dashboard
-=========
+Viewscreen
+==========
 
 Disclosure statement
 --------------------
@@ -20,7 +20,7 @@ Screenshot
 Install procedure
 -----------------
 
-Dashboard is an edited instance of [Dashing](http://shopify.github.io/dashing/)
+Viewscreen is an edited instance of [Dashing](http://shopify.github.io/dashing/)
 
 Install the gem from the command line. Make sure you have Ruby 1.9
 
@@ -29,7 +29,7 @@ Install the gem from the command line. Make sure you have Ruby 1.9
 Clone dashboard
 
     $ cd /path/to/install/dir
-    $ git clone https://github.com/AmnestyInternational/dashboard.git
+    $ git clone https://github.com/AmnestyInternational/Viewscreen.git
 
 Bundle gems
 
