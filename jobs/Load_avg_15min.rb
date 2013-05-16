@@ -5,7 +5,7 @@ points = []
 end
 last_x = points.last[:x]
 
-SCHEDULER.every '15m', :first_in => 0 do |job|
+SCHEDULER.every '15m', :first_in => 3 do |job|
   points.shift
   last_x += 1
   uptime = %x('uptime')

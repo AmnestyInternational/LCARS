@@ -3,7 +3,7 @@ require 'tiny_tds'
 
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '60m', :first_in => 0 do |job|
+SCHEDULER.every '60m', :first_in => 2 do |job|
   populartweets = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])

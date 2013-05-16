@@ -5,7 +5,7 @@ require 'json'
 # The url you are tracking
 sharedlink = URI::encode('amnesty.ca')
 
-SCHEDULER.every '10m', :first_in => 0 do |job|
+SCHEDULER.every '10m', :first_in => 1 do |job|
   fbstat = []
 
   http = Net::HTTP.new('graph.facebook.com')
