@@ -2,7 +2,7 @@
 require 'net/http'
 require 'json'
 
-SCHEDULER.every '10m', :first_in => 2 do |job|
+SCHEDULER.every '10m', :first_in => 120 do |job|
   http = Net::HTTP.new('ajax.googleapis.com')
   response = http.request(Net::HTTP::Get.new("/ajax/services/feed/load?v=1.0&num=10&q=http://www.fpinfomart.ca/clip/rss/bbertonhunter/398427/"))
   newsarticles = JSON.parse(response.body)['responseData']['feed']['entries']

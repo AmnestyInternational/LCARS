@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '11m', :first_in => 2 do |job|
+SCHEDULER.every '11m', :first_in => 30 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
   result = client.execute("SELECT COUNT(ID) AS 'CurrentSupporters' FROM externaldata.dbo.vAI_Definition_CurrentSupporter")
   current_supporters = result.first['CurrentSupporters']

@@ -10,7 +10,7 @@ points = []
 end
 last_x = points.last[:x]
 
-SCHEDULER.every '10m', :first_in => 1 do |job|
+SCHEDULER.every '10m', :first_in => 110 do |job|
   points.shift
   last_x += 1
 

@@ -3,7 +3,7 @@ require 'yaml'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '1m', :first_in => 2 do |job|
+SCHEDULER.every '1m', :first_in => 30 do |job|
   serverstats = []
   loadavg = []
   # Get SQL Errors
