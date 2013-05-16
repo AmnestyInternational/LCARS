@@ -1,5 +1,5 @@
-Viewscreen
-==========
+LCARS
+=====
 
 Disclosure statement
 --------------------
@@ -11,6 +11,11 @@ The purpose of this project is to organise and display data in a useful and cust
 * Track the success of campaigns
 * Determine which issues are important to our supporters
 * Responds quickly to changes in the social media sphere
+
+Naming
+------
+
+Library Computer Access/Retrieval System, see [Wikipedia article](http://en.wikipedia.org/wiki/LCARS) for more information.
 
 Screenshot
 ----------
