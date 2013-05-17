@@ -17,6 +17,12 @@ Naming
 
 Library Computer Access/Retrieval System, see [Wikipedia article](http://en.wikipedia.org/wiki/LCARS) for more information.
 
+Screencast
+----------
+
+[YouTube demo](http://youtu.be/lbcU5ZhoryA)
+
+
 Screenshot
 ----------
 
