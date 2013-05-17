@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '10m', :first_in => 0 do |job|
+SCHEDULER.every '10m', :first_in => 115 do |job|
   inputcounts = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
