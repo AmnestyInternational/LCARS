@@ -18,7 +18,8 @@ SCHEDULER.every '60m', :first_in => 600 do |job|
       ON T.id = TA.tweet_id
     WHERE
       TA.term LIKE '#%' AND
-      T.text LIKE '%Amnesty%International%'
+      T.text LIKE '%Amnesty%International%' AND
+      TA.term NOT IN ('#Amnesty','#AmnestyInternational')
     GROUP BY TA.term
     ORDER BY COUNT(TA.term) DESC")
 
