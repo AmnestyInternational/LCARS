@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '10m', :first_in => 80 do |job|
+SCHEDULER.every '10m', :first_in => 0 do |job|
   fbpagestat = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
@@ -24,5 +24,11 @@ ORDER BY fpp.created_time DESC")
   end
 
   send_event('Facebook_AIC_page_stats', { items: fbpagestat })
+
+  11.times do
+    fbpagestat.pop
+  end
+
+  send_event('Facebook_AIC_page_stats_short', { items: fbpagestat })
 
 end

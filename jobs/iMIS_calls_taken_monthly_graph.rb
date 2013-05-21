@@ -22,12 +22,9 @@ ORDER BY Month ASC")
   last_x = 0
 
   result.each do | row |
-    puts row['Count']
     points << { x: last_x, y: row['Count'] }
-    puts points.inspect
     last_x += 1
     send_event('iMIS_calls_taken_monthly_graph', points: points)
-    puts points.inspect
   end
 
 end
