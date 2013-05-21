@@ -1,3 +1,9 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1},{"col":2,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":1,"row":2},{"col":3,"row":2},{"col":4,"row":1},{"col":1,"row":3},{"col":1,"row":5},{"col":1,"row":4},{"col":3,"row":3},{"col":3,"row":5}]')
+});
+</script>
+
 <% content_for(:title) { "Member Services" } %>
 <div class="gridster">
   <ul>
@@ -11,19 +17,24 @@
     <i class="icon-user icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="twitter_mentions_AIC" style="background-color:#1ABBB4;" data-view="Comments" data-title="Twitter feed" data-moreinfo="Popular Amnesty International tweets in Major Canadian Cities"></div>
-      <i class="icon-twitter icon-background"></i>
-    </li>
-
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="iMIS_current_supporters" style="background-color:#F06EA9;" data-view="Meter" data-title="Current Supporters" data-min="0" data-max="100000" data-moreinfo="# of current supporters with 100k target"></div>
       <i class="icon-heart icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="RSS_feed_Google_News_Amnesty" style="background-color:#F26C4F;" data-view="Comments" data-title="Google News feed" data-moreinfo="News articles related to Amnesty International"></div>
-    <i class="icon-paper-clip icon-background"></i>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="Twitter_trending_hashtags" style="background-color:#1ABBB4;" data-view="List" data-unordered="true" data-title="Trending Hashtags" data-moreinfo="From across Canada"></div>
+    <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_calls_taken_month-to-date" style="background-color:#FBAF5C;" data-view="Number" data-title="Calls taken this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+    <i class="icon-phone icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_calls_taken_monthly_graph" style="background-color:#F26C4F;" data-view="Graph" data-title="Calls taken this month" data-moreinfo="Graph comparted to previous months" ></div>
+    <i class="icon-phone icon-background"></i>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
@@ -31,9 +42,14 @@
     <i class="icon-facebook icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="Twitter_trending_hashtags" style="background-color:#1ABBB4;" data-view="List" data-unordered="true" data-title="Trending Hashtags" data-moreinfo="From across Canada"></div>
-    <i class="icon-twitter icon-background"></i>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="RSS_feed_Google_News_Amnesty" style="background-color:#F26C4F;" data-view="Comments" data-title="Google News feed" data-moreinfo="News articles related to Amnesty International"></div>
+    <i class="icon-paper-clip icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions_AIC" style="background-color:#1ABBB4;" data-view="Comments" data-title="Twitter feed" data-moreinfo="Popular Amnesty International tweets in Major Canadian Cities"></div>
+      <i class="icon-twitter icon-background"></i>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
