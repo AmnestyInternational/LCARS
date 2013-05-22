@@ -1,9 +1,3 @@
-<script type='text/javascript'>
-$(function() {
-Dashing.gridsterLayout('[{"col":1,"row":1},{"col":2,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":1,"row":2},{"col":3,"row":2},{"col":4,"row":1},{"col":1,"row":3},{"col":1,"row":5},{"col":1,"row":4},{"col":3,"row":3},{"col":3,"row":5}]')
-});
-</script>
-
 <% content_for(:title) { "Member Services" } %>
 <div class="gridster">
   <ul>
@@ -13,8 +7,33 @@ Dashing.gridsterLayout('[{"col":1,"row":1},{"col":2,"row":1},{"col":3,"row":1},{
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="iMIS_note_input_counts" style="background-color:#5574B9;" data-view="List" data-unordered="true" data-title="iMIS leader board" data-moreinfo="Top 7 iMIS note inputers in last 7 days"></div>
+      <div data-id="iMIS_note_input_counts" style="background-color:#5574B9;" data-view="List" data-unordered="true" data-title="iMIS leader board" data-moreinfo="Top iMIS note inputers in last 3 days"></div>
     <i class="icon-user icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_phone_month-to-date" style="background-color:#FBAF5C;" data-view="Number" data-title="Phone this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+    <i class="icon-phone icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_mail_month-to-date" style="background-color:#855FA8;" data-view="Number" data-title="Mail this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+    <i class="icon-envelope icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_coupon_month-to-date" style="background-color:#7CC576;" data-view="Number" data-title="Coupons this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+    <i class="icon-bookmark-empty icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_in_person_month-to-date" style="background-color:#605CA8;" data-view="Number" data-title="In person this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+    <i class="icon-user icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iMIS_web_month-to-date" style="background-color:#F26D7D;" data-view="Number" data-title="Web this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+    <i class="icon-github icon-background"></i>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -28,14 +47,10 @@ Dashing.gridsterLayout('[{"col":1,"row":1},{"col":2,"row":1},{"col":3,"row":1},{
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="iMIS_calls_taken_month-to-date" style="background-color:#FBAF5C;" data-view="Number" data-title="Calls taken this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
+      <div data-id="iMIS_calls_month-to-date" style="background-color:#FBAF5C;" data-view="Number" data-title="Calls this month" data-moreinfo="Compared to same period last month" data-prefix=""></div>
     <i class="icon-phone icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="iMIS_calls_taken_monthly_graph" style="background-color:#F26C4F;" data-view="Graph" data-title="Calls taken this month" data-moreinfo="Graph comparted to previous months" ></div>
-    <i class="icon-phone icon-background"></i>
-    </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
       <div data-id="Facebook_AIC_page_stats" style="background-color:#438CCA;" data-view="List" data-unordered="true" data-title="FB Page Shares" data-moreinfo="Sharing stats for FB page"></div>
