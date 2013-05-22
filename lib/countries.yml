@@ -1,0 +1,2258 @@
+---
+AF:
+  :name: Afghanistan
+  :aplha3: AFG
+  :numeric: '4'
+  :altnames: 
+  :adjectivals:
+  - Afghan
+  - Afghani
+  :demonyms:
+  - Afghans
+AL:
+  :name: Albania
+  :aplha3: ALB
+  :numeric: '8'
+  :altnames: 
+  :adjectivals:
+  - Albanian
+  :demonyms:
+  - Albanians
+DZ:
+  :name: Algeria
+  :aplha3: DZA
+  :numeric: '12'
+  :altnames: 
+  :adjectivals:
+  - Algerian
+  :demonyms:
+  - Algerians
+AS:
+  :name: American Samoa
+  :aplha3: ASM
+  :numeric: '16'
+  :altnames: 
+  :adjectivals:
+  - American Samoan
+  :demonyms:
+  - American Samoans
+AD:
+  :name: Andorra
+  :aplha3: AND
+  :numeric: '20'
+  :altnames: 
+  :adjectivals:
+  - Andorran
+  :demonyms:
+  - Andorrans
+AO:
+  :name: Angola
+  :aplha3: AGO
+  :numeric: '24'
+  :altnames: 
+  :adjectivals:
+  - Angolan
+  :demonyms:
+  - Angolans
+AI:
+  :name: Anguilla
+  :aplha3: AIA
+  :numeric: '660'
+  :altnames: 
+  :adjectivals:
+  - Anguillan
+  :demonyms:
+  - Anguillans
+AG:
+  :name: Antigua and Barbuda
+  :aplha3: ATG
+  :numeric: '28'
+  :altnames: 
+  :adjectivals:
+  - Antiguan
+  - Barbudan
+  :demonyms:
+  - Antiguans
+  - Barbudans
+AR:
+  :name: Argentina
+  :aplha3: ARG
+  :numeric: '32'
+  :altnames: 
+  :adjectivals:
+  - Argentine
+  - Argentinean
+  - Argentinian
+  :demonyms:
+  - Argentines
+  - Argentineans
+  - Argentinians
+AM:
+  :name: Armenia
+  :aplha3: ARM
+  :numeric: '51'
+  :altnames: 
+  :adjectivals:
+  - Armenian
+  :demonyms:
+  - Armenians
+AW:
+  :name: Aruba
+  :aplha3: ABW
+  :numeric: '533'
+  :altnames: 
+  :adjectivals:
+  - Aruban
+  :demonyms:
+  - Arubans
+AU:
+  :name: Australia
+  :aplha3: AUS
+  :numeric: '36'
+  :altnames: 
+  :adjectivals:
+  - Australian
+  - Aussie
+  :demonyms:
+  - Australians
+  - Aussies
+AT:
+  :name: Austria
+  :aplha3: AUT
+  :numeric: '40'
+  :altnames: 
+  :adjectivals:
+  - Austrian
+  :demonyms:
+  - Austrians
+AZ:
+  :name: Azerbaijan
+  :aplha3: AZE
+  :numeric: '31'
+  :altnames: 
+  :adjectivals:
+  - Azerbaijani
+  - Azeri
+  :demonyms:
+  - Azerbaijanis
+  - Azeris
+BS:
+  :name: Bahamas
+  :aplha3: BHS
+  :numeric: '44'
+  :altnames: 
+  :adjectivals:
+  - Bahamian
+  :demonyms:
+  - Bahamians
+BH:
+  :name: Bahrain
+  :aplha3: BHR
+  :numeric: '48'
+  :altnames: 
+  :adjectivals:
+  - Bahraini
+  :demonyms:
+  - Bahrainis
+BD:
+  :name: Bangladesh
+  :aplha3: BGD
+  :numeric: '50'
+  :altnames: 
+  :adjectivals:
+  - Bangladeshi
+  :demonyms:
+  - Bangladeshis
+BB:
+  :name: Barbados
+  :aplha3: BRB
+  :numeric: '52'
+  :altnames: 
+  :adjectivals:
+  - Barbadian
+  - Bajan
+  :demonyms:
+  - Barbadians
+  - Bajans
+BY:
+  :name: Belarus
+  :aplha3: BLR
+  :numeric: '112'
+  :altnames: 
+  :adjectivals:
+  - Belarusian
+  :demonyms:
+  - Belarusians
+BE:
+  :name: Belgium
+  :aplha3: BEL
+  :numeric: '56'
+  :altnames: 
+  :adjectivals:
+  - Belgian
+  :demonyms:
+  - Belgians
+BZ:
+  :name: Belize
+  :aplha3: BLZ
+  :numeric: '84'
+  :altnames: 
+  :adjectivals:
+  - Belizean
+  :demonyms:
+  - Belizeans
+BJ:
+  :name: Benin
+  :aplha3: BEN
+  :numeric: '204'
+  :altnames: 
+  :adjectivals:
+  - Beninese
+  - Beninois
+  :demonyms:
+  - Beninese
+  - Beninois
+BM:
+  :name: Bermuda
+  :aplha3: BMU
+  :numeric: '60'
+  :altnames: 
+  :adjectivals:
+  - Bermudian
+  - Bermudan
+  :demonyms:
+  - Bermudians
+  - Bermudans
+BT:
+  :name: Bhutan
+  :aplha3: BTN
+  :numeric: '64'
+  :altnames: 
+  :adjectivals:
+  - Bhutanese
+  :demonyms:
+  - Bhutanese
+BO:
+  :name: Bolivia
+  :aplha3: BOL
+  :numeric: '68'
+  :altnames: 
+  :adjectivals:
+  - Bolivian
+  :demonyms:
+  - Bolivians
+BA:
+  :name: Bosnia and Herzegovina
+  :aplha3: BIH
+  :numeric: '70'
+  :altnames: 
+  :adjectivals:
+  - Bosnian
+  - Bosniak
+  - Herzegovinian
+  :demonyms:
+  - Bosnians
+  - Bosniaks
+  - Herzegovinians
+BW:
+  :name: Botswana
+  :aplha3: BWA
+  :numeric: '72'
+  :altnames: 
+  :adjectivals:
+  - Motswana
+  - Batswana
+  - Botswanan
+  :demonyms:
+  - Batswana
+  - Botswanans
+BR:
+  :name: Brazil
+  :aplha3: BRA
+  :numeric: '76'
+  :altnames: 
+  :adjectivals:
+  - Brazilian
+  :demonyms:
+  - Brazilians
+BN:
+  :name: Brunei Darussalam
+  :aplha3: BRN
+  :numeric: '96'
+  :altnames: 
+  :adjectivals:
+  - Bruneian
+  :demonyms:
+  - Bruneians
+BG:
+  :name: Bulgaria
+  :aplha3: BGR
+  :numeric: '100'
+  :altnames: 
+  :adjectivals:
+  - Bulgarian
+  :demonyms:
+  - Bulgarians
+BF:
+  :name: Burkina Faso
+  :aplha3: BFA
+  :numeric: '854'
+  :altnames: 
+  :adjectivals:
+  - Burkinabè
+  - Burkinabé
+  :demonyms:
+  - Burkinabè
+  - Burkinabé
+MM:
+  :name: Myanmar
+  :aplha3: MMR
+  :numeric: '104'
+  :altnames:
+  - Burma
+  :adjectivals:
+  - Burmese
+  :demonyms:
+  - Bamar
+  - Burmese
+  - Myanma
+BI:
+  :name: Burundi
+  :aplha3: BDI
+  :numeric: '108'
+  :altnames: 
+  :adjectivals:
+  - Burundian
+  :demonyms:
+  - Burundians
+KH:
+  :name: Cambodia
+  :aplha3: KHM
+  :numeric: '116'
+  :altnames: 
+  :adjectivals:
+  - Cambodian
+  :demonyms:
+  - Cambodians
+CM:
+  :name: Cameroon
+  :aplha3: CMR
+  :numeric: '120'
+  :altnames: 
+  :adjectivals:
+  - Cameroonian
+  :demonyms:
+  - Cameroonians
+CA:
+  :name: Canada
+  :aplha3: CAN
+  :numeric: '124'
+  :altnames: 
+  :adjectivals:
+  - Canadian
+  :demonyms:
+  - Canadians
+  - Canucks
+CV:
+  :name: Cape Verde
+  :aplha3: CPV
+  :numeric: '132'
+  :altnames: 
+  :adjectivals:
+  - Cape Verdean
+  :demonyms:
+  - Cape Verdeans
+KY:
+  :name: Cayman Islands
+  :aplha3: CYM
+  :numeric: '136'
+  :altnames: 
+  :adjectivals:
+  - Caymanian
+  :demonyms:
+  - Caymanians
+CF:
+  :name: Central African Republic
+  :aplha3: CAF
+  :numeric: '140'
+  :altnames: 
+  :adjectivals:
+  - Central African
+  :demonyms:
+  - Central Africans
+TD:
+  :name: Chad
+  :aplha3: TCD
+  :numeric: '148'
+  :altnames: 
+  :adjectivals:
+  - Chadian
+  :demonyms:
+  - Chadians
+CL:
+  :name: Chile
+  :aplha3: CHL
+  :numeric: '152'
+  :altnames: 
+  :adjectivals:
+  - Chilean
+  :demonyms:
+  - Chileans
+CN:
+  :name: China
+  :aplha3: CHN
+  :numeric: '156'
+  :altnames: 
+  :adjectivals:
+  - Chinese
+  :demonyms:
+  - Chinese
+CX:
+  :name: Christmas Island
+  :aplha3: CXR
+  :numeric: '162'
+  :altnames: 
+  :adjectivals:
+  - Christmas Island
+  :demonyms:
+  - Christmas Islanders
+CC:
+  :name: Cocos (Keeling) Islands
+  :aplha3: CCK
+  :numeric: '166'
+  :altnames:
+  - Cocos Islands
+  - Keeling Islands
+  :adjectivals:
+  - Cocos Island
+  - Keeling Island
+  :demonyms:
+  - Cocos Islanders
+  - Keeling Islanders
+CO:
+  :name: Colombia
+  :aplha3: COL
+  :numeric: '170'
+  :altnames: 
+  :adjectivals:
+  - Colombian
+  :demonyms:
+  - Colombians
+KM:
+  :name: Comoros
+  :aplha3: COM
+  :numeric: '174'
+  :altnames: 
+  :adjectivals:
+  - Comorian
+  :demonyms:
+  - Comorians
+CG:
+  :name: Congo
+  :aplha3: COG
+  :numeric: '178'
+  :altnames: 
+  :adjectivals:
+  - Congolese
+  - Congo
+  :demonyms:
+  - Congolese
+CD:
+  :name: Congo
+  :aplha3: COD
+  :numeric: '180'
+  :altnames: 
+  :adjectivals:
+  - Congolese
+  - Congo
+  :demonyms:
+  - Congolese
+CK:
+  :name: Cook Islands
+  :aplha3: COK
+  :numeric: '184'
+  :altnames: 
+  :adjectivals:
+  - Cook Island
+  - Cook Islands
+  :demonyms:
+  - Cook Islanders
+CR:
+  :name: Costa Rica
+  :aplha3: CRI
+  :numeric: '188'
+  :altnames: 
+  :adjectivals:
+  - Costa Rican
+  :demonyms:
+  - Costa Ricans
+  - Ticos
+CI:
+  :name: Cote d'Ivoire
+  :aplha3: CIV
+  :numeric: '384'
+  :altnames: 
+  :adjectivals:
+  - Ivorian
+  :demonyms:
+  - Ivorians
+HR:
+  :name: Croatia
+  :aplha3: HRV
+  :numeric: '191'
+  :altnames: 
+  :adjectivals:
+  - Croatian
+  :demonyms:
+  - Croatians
+  - Croats
+CU:
+  :name: Cuba
+  :aplha3: CUB
+  :numeric: '192'
+  :altnames: 
+  :adjectivals:
+  - Cuban
+  :demonyms:
+  - Cubans
+CW:
+  :name: Curacao
+  :aplha3: CUW
+  :numeric: '531'
+  :altnames: 
+  :adjectivals:
+  - Curaçao
+  :demonyms:
+  - Curaçaoan
+CY:
+  :name: Cyprus
+  :aplha3: CYP
+  :numeric: '196'
+  :altnames: 
+  :adjectivals:
+  - Cypriot
+  :demonyms:
+  - Cypriots
+CZ:
+  :name: Czech Republic
+  :aplha3: CZE
+  :numeric: '203'
+  :altnames: 
+  :adjectivals:
+  - Czech
+  :demonyms:
+  - Czechs
+DK:
+  :name: Denmark
+  :aplha3: DNK
+  :numeric: '208'
+  :altnames: 
+  :adjectivals:
+  - Danish
+  :demonyms:
+  - Danes
+DJ:
+  :name: Djibouti
+  :aplha3: DJI
+  :numeric: '262'
+  :altnames: 
+  :adjectivals:
+  - Djiboutian
+  :demonyms:
+  - Djiboutians
+DM:
+  :name: Dominica
+  :aplha3: DMA
+  :numeric: '212'
+  :altnames: 
+  :adjectivals:
+  - Dominicand
+  :demonyms:
+  - Dominicansd
+DO:
+  :name: Dominican Republic
+  :aplha3: DOM
+  :numeric: '214'
+  :altnames: 
+  :adjectivals:
+  - Dominicane
+  :demonyms:
+  - Dominicanse
+  - Quisqueyanos
+EC:
+  :name: Ecuador
+  :aplha3: ECU
+  :numeric: '218'
+  :altnames: 
+  :adjectivals:
+  - Ecuadorian
+  :demonyms:
+  - Ecuadorians
+EG:
+  :name: Egypt
+  :aplha3: EGY
+  :numeric: '818'
+  :altnames: 
+  :adjectivals:
+  - Egyptian
+  :demonyms:
+  - Egyptians
+SV:
+  :name: El Salvador
+  :aplha3: SLV
+  :numeric: '222'
+  :altnames: 
+  :adjectivals:
+  - Salvadoran
+  :demonyms:
+  - Salvadorans
+GQ:
+  :name: Equatorial Guinea
+  :aplha3: GNQ
+  :numeric: '226'
+  :altnames: 
+  :adjectivals:
+  - Equatorial Guinean
+  - Equatoguinean
+  :demonyms:
+  - Equatorial Guineans
+  - Equatoguineans
+ER:
+  :name: Eritrea
+  :aplha3: ERI
+  :numeric: '232'
+  :altnames: 
+  :adjectivals:
+  - Eritrean
+  :demonyms:
+  - Eritreans
+EE:
+  :name: Estonia
+  :aplha3: EST
+  :numeric: '233'
+  :altnames: 
+  :adjectivals:
+  - Estonian
+  :demonyms:
+  - Estonians
+ET:
+  :name: Ethiopia
+  :aplha3: ETH
+  :numeric: '231'
+  :altnames: 
+  :adjectivals:
+  - Ethiopian
+  :demonyms:
+  - Ethiopians
+FK:
+  :name: Falkland Islands
+  :aplha3: FLK
+  :numeric: '238'
+  :altnames:
+  - Malvinas
+  :adjectivals:
+  - Falkland Island
+  :demonyms:
+  - Falkland Islanders
+  - Belongers
+FO:
+  :name: Faroe Islands
+  :aplha3: FRO
+  :numeric: '703'
+  :altnames: 
+  :adjectivals:
+  - Faroese
+  :demonyms:
+  - Faroese
+FJ:
+  :name: Fiji
+  :aplha3: FJI
+  :numeric: '242'
+  :altnames: 
+  :adjectivals:
+  - Fijian
+  :demonyms:
+  - Fijians
+FI:
+  :name: Finland
+  :aplha3: FIN
+  :numeric: '246'
+  :altnames: 
+  :adjectivals:
+  - Finnish
+  :demonyms:
+  - Finns
+FR:
+  :name: France
+  :aplha3: FRA
+  :numeric: '250'
+  :altnames: 
+  :adjectivals:
+  - French
+  :demonyms:
+  - French
+  - Frenchman
+  - Frenchwoman
+GF:
+  :name: French Guiana
+  :aplha3: GUF
+  :numeric: '254'
+  :altnames: 
+  :adjectivals:
+  - French Guianese
+  :demonyms:
+  - French Guianese
+PF:
+  :name: French Polynesia
+  :aplha3: PYF
+  :numeric: '258'
+  :altnames: 
+  :adjectivals:
+  - French Polynesian
+  :demonyms:
+  - French Polynesians
+  - Tahitians
+GA:
+  :name: Gabon
+  :aplha3: GAB
+  :numeric: '266'
+  :altnames: 
+  :adjectivals:
+  - Gabonese
+  :demonyms:
+  - Gabonese
+GM:
+  :name: Gambia
+  :aplha3: GMB
+  :numeric: '270'
+  :altnames: 
+  :adjectivals:
+  - Gambian
+  :demonyms:
+  - Gambians
+GE:
+  :name: Georgia
+  :aplha3: GEO
+  :numeric: '268'
+  :altnames: 
+  :adjectivals:
+  - Georgian
+  :demonyms:
+  - Georgians
+DE:
+  :name: Germany
+  :aplha3: DEU
+  :numeric: '276'
+  :altnames: 
+  :adjectivals:
+  - German
+  :demonyms:
+  - Germans
+GH:
+  :name: Ghana
+  :aplha3: GHA
+  :numeric: '288'
+  :altnames: 
+  :adjectivals:
+  - Ghanaian
+  :demonyms:
+  - Ghanaians
+GI:
+  :name: Gibraltar
+  :aplha3: GIB
+  :numeric: '292'
+  :altnames: 
+  :adjectivals:
+  - Gibraltar
+  :demonyms:
+  - Gibraltarians
+GR:
+  :name: Greece
+  :aplha3: GRC
+  :numeric: '300'
+  :altnames: 
+  :adjectivals:
+  - Greek
+  - Greciang
+  - Hellenic
+  :demonyms:
+  - Greeks
+  - Greciansg
+  - Hellenes
+GL:
+  :name: Greenland
+  :aplha3: GRL
+  :numeric: '304'
+  :altnames: 
+  :adjectivals:
+  - Greenlandic
+  :demonyms:
+  - Greenlanders
+GD:
+  :name: Grenada
+  :aplha3: GRD
+  :numeric: '308'
+  :altnames: 
+  :adjectivals:
+  - Grenadian
+  :demonyms:
+  - Grenadians
+GP:
+  :name: Guadeloupe
+  :aplha3: GLP
+  :numeric: '312'
+  :altnames: 
+  :adjectivals:
+  - Guadeloupe
+  :demonyms:
+  - Guadeloupians
+GU:
+  :name: Guam
+  :aplha3: GUM
+  :numeric: '316'
+  :altnames: 
+  :adjectivals:
+  - Guamanian
+  :demonyms:
+  - Guamanians
+GT:
+  :name: Guatemala
+  :aplha3: GTM
+  :numeric: '320'
+  :altnames: 
+  :adjectivals:
+  - Guatemalan
+  :demonyms:
+  - Guatemalans
+GN:
+  :name: Guinea
+  :aplha3: GIN
+  :numeric: '324'
+  :altnames: 
+  :adjectivals:
+  - Guinean
+  :demonyms:
+  - Guineans
+GW:
+  :name: Guinea-Bissau
+  :aplha3: GNB
+  :numeric: '624'
+  :altnames: 
+  :adjectivals:
+  - Guinean
+  :demonyms:
+  - Guineans
+GY:
+  :name: Guyana
+  :aplha3: GUY
+  :numeric: '328'
+  :altnames: 
+  :adjectivals:
+  - Guyanese
+  :demonyms:
+  - Guyanese
+HT:
+  :name: Haiti
+  :aplha3: HTI
+  :numeric: '332'
+  :altnames: 
+  :adjectivals:
+  - Haitian
+  :demonyms:
+  - Haitians
+VA:
+  :name: Vatican City
+  :aplha3: VAT
+  :numeric: '336'
+  :altnames:
+  - Holy See
+  - Vatican
+  :adjectivals: 
+  :demonyms: 
+HN:
+  :name: Honduras
+  :aplha3: HND
+  :numeric: '340'
+  :altnames: 
+  :adjectivals:
+  - Honduran
+  :demonyms:
+  - Hondurans
+  - Catrachos
+HK:
+  :name: Hong Kong
+  :aplha3: HKG
+  :numeric: '344'
+  :altnames: 
+  :adjectivals:
+  - Hong Kong
+  - Hongkongese
+  :demonyms:
+  - Hongkongers
+  - Hongkongese
+  - Hongkies
+  - Hongers
+HU:
+  :name: Hungary
+  :aplha3: HUN
+  :numeric: '348'
+  :altnames: 
+  :adjectivals:
+  - Hungarian
+  - Magyar
+  :demonyms:
+  - Hungarians
+  - Magyars
+IS:
+  :name: Iceland
+  :aplha3: ISL
+  :numeric: '352'
+  :altnames: 
+  :adjectivals:
+  - Icelandic
+  :demonyms:
+  - Icelanders
+IN:
+  :name: India
+  :aplha3: IND
+  :numeric: '356'
+  :altnames: 
+  :adjectivals:
+  - Indian
+  :demonyms:
+  - Indians
+ID:
+  :name: Indonesia
+  :aplha3: IDN
+  :numeric: '360'
+  :altnames: 
+  :adjectivals:
+  - Indonesian
+  :demonyms:
+  - Indonesians
+IR:
+  :name: Iran
+  :aplha3: IRN
+  :numeric: '364'
+  :altnames: 
+  :adjectivals:
+  - Iranian
+  - Persian
+  :demonyms:
+  - Iranians
+  - Persians
+IQ:
+  :name: Iraq
+  :aplha3: IRQ
+  :numeric: '368'
+  :altnames: 
+  :adjectivals:
+  - Iraqi
+  :demonyms:
+  - Iraqis
+IE:
+  :name: Ireland
+  :aplha3: IRL
+  :numeric: '372'
+  :altnames: 
+  :adjectivals:
+  - Irish
+  - Southern Irish
+  :demonyms:
+  - Irish
+  - Southern Irish
+IM:
+  :name: Isle of Man
+  :aplha3: IMN
+  :numeric: '833'
+  :altnames: 
+  :adjectivals:
+  - Manx
+  :demonyms:
+  - Manx
+IL:
+  :name: Israel
+  :aplha3: ISR
+  :numeric: '376'
+  :altnames: 
+  :adjectivals:
+  - Israeli
+  :demonyms:
+  - Israelis
+IT:
+  :name: Italy
+  :aplha3: ITA
+  :numeric: '380'
+  :altnames: 
+  :adjectivals:
+  - Italian
+  - Italicf
+  :demonyms:
+  - Italians
+  - Italicsf
+JM:
+  :name: Jamaica
+  :aplha3: JAM
+  :numeric: '388'
+  :altnames: 
+  :adjectivals:
+  - Jamaican
+  :demonyms:
+  - Jamaicans
+JP:
+  :name: Japan
+  :aplha3: JPN
+  :numeric: '392'
+  :altnames: 
+  :adjectivals:
+  - Japanese
+  :demonyms:
+  - Japanese
+JO:
+  :name: Jordan
+  :aplha3: JOR
+  :numeric: '400'
+  :altnames: 
+  :adjectivals:
+  - Jordanian
+  :demonyms:
+  - Jordanians
+KZ:
+  :name: Kazakhstan
+  :aplha3: KAZ
+  :numeric: '398'
+  :altnames: 
+  :adjectivals:
+  - Kazakh
+  - Kazakhstani
+  :demonyms:
+  - Kazakhstanis
+  - Kazakhs
+KE:
+  :name: Kenya
+  :aplha3: KEN
+  :numeric: '404'
+  :altnames: 
+  :adjectivals:
+  - Kenyan
+  :demonyms:
+  - Kenyans
+KI:
+  :name: Kiribati
+  :aplha3: KIR
+  :numeric: '296'
+  :altnames: 
+  :adjectivals:
+  - I-Kiribati
+  :demonyms:
+  - I-Kiribati
+KP:
+  :name: Korea
+  :aplha3: PRK
+  :numeric: '408'
+  :altnames: 
+  :adjectivals:
+  - North Korean
+  :demonyms:
+  - Koreans
+KR:
+  :name: Korea
+  :aplha3: KOR
+  :numeric: '410'
+  :altnames: 
+  :adjectivals:
+  - South Korean
+  :demonyms:
+  - Koreans
+XK:
+  :name: Kosovo
+  :aplha3: 
+  :numeric: 
+  :altnames: 
+  :adjectivals:
+  - Kosovar
+  - Kosovan
+  :demonyms:
+  - Kosovars
+KW:
+  :name: Kuwait
+  :aplha3: KWT
+  :numeric: '414'
+  :altnames: 
+  :adjectivals:
+  - Kuwaiti
+  :demonyms:
+  - Kuwaitis
+KG:
+  :name: Kyrgyzstan
+  :aplha3: KGZ
+  :numeric: '417'
+  :altnames: 
+  :adjectivals:
+  - Kyrgyzstani
+  - Kyrgyz
+  - Kirgiz
+  - Kirghiz
+  :demonyms:
+  - Kyrgyzstanis
+  - Kyrgyz
+  - Kirgiz
+  - Kirghiz
+LA:
+  :name: Lao People's Democratic Republic
+  :aplha3: LAO
+  :numeric: '418'
+  :altnames: 
+  :adjectivals:
+  - Laotian
+  - Lao
+  :demonyms:
+  - Laotians
+  - Laos
+LV:
+  :name: Latvia
+  :aplha3: LVA
+  :numeric: '428'
+  :altnames: 
+  :adjectivals:
+  - Latvian
+  :demonyms:
+  - Latvians
+  - Letts
+LB:
+  :name: Lebanon
+  :aplha3: LBN
+  :numeric: '422'
+  :altnames: 
+  :adjectivals:
+  - Lebanese
+  :demonyms:
+  - Lebanese
+LS:
+  :name: Lesotho
+  :aplha3: LSO
+  :numeric: '426'
+  :altnames: 
+  :adjectivals:
+  - Basotho
+  :demonyms:
+  - Basotho
+LR:
+  :name: Liberia
+  :aplha3: LBR
+  :numeric: '430'
+  :altnames: 
+  :adjectivals:
+  - Liberian
+  :demonyms:
+  - Liberians
+LY:
+  :name: Libyan Arab Jamahiriya
+  :aplha3: LBY
+  :numeric: '434'
+  :altnames: 
+  :adjectivals:
+  - Libyan
+  :demonyms:
+  - Libyans
+LI:
+  :name: Liechtenstein
+  :aplha3: LIE
+  :numeric: '438'
+  :altnames: 
+  :adjectivals:
+  - Liechtenstein
+  :demonyms:
+  - Liechtensteiners
+LT:
+  :name: Lithuania
+  :aplha3: LTU
+  :numeric: '440'
+  :altnames: 
+  :adjectivals:
+  - Lithuanian
+  :demonyms:
+  - Lithuanians
+LU:
+  :name: Luxembourg
+  :aplha3: LUX
+  :numeric: '442'
+  :altnames: 
+  :adjectivals:
+  - Luxembourg
+  - Luxembourgish
+  :demonyms:
+  - Luxembourgers
+MO:
+  :name: Macao
+  :aplha3: MAC
+  :numeric: '446'
+  :altnames: 
+  :adjectivals:
+  - Macanese
+  - Chinese
+  :demonyms:
+  - Macanese
+  - Chinese
+MK:
+  :name: Macedonia
+  :aplha3: MKD
+  :numeric: '807'
+  :altnames: 
+  :adjectivals:
+  - Macedonian
+  :demonyms:
+  - Macedonians
+MG:
+  :name: Madagascar
+  :aplha3: MDG
+  :numeric: '450'
+  :altnames: 
+  :adjectivals:
+  - Malagasy
+  :demonyms:
+  - Malagasy
+MW:
+  :name: Malawi
+  :aplha3: MWI
+  :numeric: '454'
+  :altnames: 
+  :adjectivals:
+  - Malawian
+  :demonyms:
+  - Malawians
+MY:
+  :name: Malaysia
+  :aplha3: MYS
+  :numeric: '458'
+  :altnames: 
+  :adjectivals:
+  - Malaysian
+  :demonyms:
+  - Malaysians
+MV:
+  :name: Maldives
+  :aplha3: MDV
+  :numeric: '462'
+  :altnames: 
+  :adjectivals:
+  - Maldivian
+  :demonyms:
+  - Maldivians
+ML:
+  :name: Mali
+  :aplha3: MLI
+  :numeric: '466'
+  :altnames: 
+  :adjectivals:
+  - Malian
+  :demonyms:
+  - Malians
+MT:
+  :name: Malta
+  :aplha3: MLT
+  :numeric: '470'
+  :altnames: 
+  :adjectivals:
+  - Maltese
+  :demonyms:
+  - Maltese
+MH:
+  :name: Marshall Islands
+  :aplha3: MHL
+  :numeric: '584'
+  :altnames: 
+  :adjectivals:
+  - Marshallese
+  :demonyms:
+  - Marshallese
+MQ:
+  :name: Martinique
+  :aplha3: MTQ
+  :numeric: '474'
+  :altnames: 
+  :adjectivals:
+  - Martiniquais
+  - Martinican
+  :demonyms:
+  - Martiniquais
+MR:
+  :name: Mauritania
+  :aplha3: MRT
+  :numeric: '478'
+  :altnames: 
+  :adjectivals:
+  - Mauritanian
+  :demonyms:
+  - Mauritanians
+MU:
+  :name: Mauritius
+  :aplha3: MUS
+  :numeric: '480'
+  :altnames: 
+  :adjectivals:
+  - Mauritian
+  :demonyms:
+  - Mauritians
+YT:
+  :name: Mayotte
+  :aplha3: MYT
+  :numeric: '175'
+  :altnames: 
+  :adjectivals:
+  - Mahoran
+  :demonyms:
+  - Mahorais
+MX:
+  :name: Mexico
+  :aplha3: MEX
+  :numeric: '484'
+  :altnames: 
+  :adjectivals:
+  - Mexican
+  :demonyms:
+  - Mexicans
+FM:
+  :name: Micronesia
+  :aplha3: FSM
+  :numeric: '583'
+  :altnames:
+  - Micronesia
+  :adjectivals:
+  - Micronesian
+  :demonyms:
+  - Micronesians
+MD:
+  :name: Moldova
+  :aplha3: MDA
+  :numeric: '498'
+  :altnames: 
+  :adjectivals:
+  - Moldovan
+  :demonyms:
+  - Moldovans
+MC:
+  :name: Monaco
+  :aplha3: MCO
+  :numeric: '492'
+  :altnames: 
+  :adjectivals:
+  - Monégasque
+  - Monacan
+  :demonyms:
+  - Monégasques
+  - Monacans
+MN:
+  :name: Mongolia
+  :aplha3: MNG
+  :numeric: '496'
+  :altnames: 
+  :adjectivals:
+  - Mongolian
+  :demonyms:
+  - Mongolians
+  - Mongols
+ME:
+  :name: Montenegro
+  :aplha3: MNE
+  :numeric: '499'
+  :altnames: 
+  :adjectivals:
+  - Montenegrin
+  :demonyms:
+  - Montenegrins
+MS:
+  :name: Montserrat
+  :aplha3: MSR
+  :numeric: '500'
+  :altnames: 
+  :adjectivals:
+  - Montserratian
+  :demonyms:
+  - Montserratians
+MA:
+  :name: Morocco
+  :aplha3: MAR
+  :numeric: '504'
+  :altnames: 
+  :adjectivals:
+  - Moroccan
+  :demonyms:
+  - Moroccans
+MZ:
+  :name: Mozambique
+  :aplha3: MOZ
+  :numeric: '508'
+  :altnames: 
+  :adjectivals:
+  - Mozambican
+  :demonyms:
+  - Mozambicans
+NA:
+  :name: Namibia
+  :aplha3: NAM
+  :numeric: '516'
+  :altnames: 
+  :adjectivals:
+  - Namibian
+  :demonyms:
+  - Namibians
+NR:
+  :name: Nauru
+  :aplha3: NRU
+  :numeric: '520'
+  :altnames: 
+  :adjectivals:
+  - Nauruan
+  :demonyms:
+  - Nauruans
+NP:
+  :name: Nepal
+  :aplha3: NPL
+  :numeric: '524'
+  :altnames: 
+  :adjectivals:
+  - Nepali
+  :demonyms:
+  - Nepalese
+NL:
+  :name: Netherlands
+  :aplha3: NLD
+  :numeric: '528'
+  :altnames: 
+  :adjectivals:
+  - Dutch
+  :demonyms:
+  - Dutch
+NC:
+  :name: New Caledonia
+  :aplha3: NCL
+  :numeric: '540'
+  :altnames: 
+  :adjectivals:
+  - New Caledonian
+  :demonyms:
+  - New Caledonians
+NZ:
+  :name: New Zealand
+  :aplha3: NZL
+  :numeric: '554'
+  :altnames: 
+  :adjectivals:
+  - New Zealand
+  - kiwi
+  :demonyms:
+  - New Zealanders
+  - kiwis
+NI:
+  :name: Nicaragua
+  :aplha3: NIC
+  :numeric: '558'
+  :altnames: 
+  :adjectivals:
+  - Nicaraguan
+  :demonyms:
+  - Nicaraguans
+NE:
+  :name: Niger
+  :aplha3: NER
+  :numeric: '562'
+  :altnames: 
+  :adjectivals:
+  - Nigerien
+  :demonyms:
+  - Nigeriens
+NG:
+  :name: Nigeria
+  :aplha3: NGA
+  :numeric: '566'
+  :altnames: 
+  :adjectivals:
+  - Nigerian
+  :demonyms:
+  - Nigerians
+NU:
+  :name: Niue
+  :aplha3: NIU
+  :numeric: '570'
+  :altnames: 
+  :adjectivals:
+  - Niuean
+  :demonyms:
+  - Niueans
+'NO':
+  :name: Norway
+  :aplha3: NOR
+  :numeric: '578'
+  :altnames: 
+  :adjectivals:
+  - Norwegian
+  :demonyms:
+  - Norwegians
+OM:
+  :name: Oman
+  :aplha3: OMN
+  :numeric: '512'
+  :altnames: 
+  :adjectivals:
+  - Omani
+  :demonyms:
+  - Omanis
+PK:
+  :name: Pakistan
+  :aplha3: PAK
+  :numeric: '586'
+  :altnames: 
+  :adjectivals:
+  - Pakistani
+  :demonyms:
+  - Pakistanis
+PS:
+  :name: Palestine
+  :aplha3: PSE
+  :numeric: '275'
+  :altnames:
+  - Occupied Palestinian Territory
+  - Israeli-occupied territories
+  :adjectivals:
+  - Palestinian
+  :demonyms:
+  - Palestinians
+PW:
+  :name: Palau
+  :aplha3: PLW
+  :numeric: '585'
+  :altnames: 
+  :adjectivals:
+  - Palauan
+  :demonyms:
+  - Palauans
+PA:
+  :name: Panama
+  :aplha3: PAN
+  :numeric: '591'
+  :altnames: 
+  :adjectivals:
+  - Panamanian
+  :demonyms:
+  - Panamanians
+PG:
+  :name: Papua New Guinea
+  :aplha3: PNG
+  :numeric: '598'
+  :altnames: 
+  :adjectivals:
+  - Papua New Guinean
+  - Papuan
+  :demonyms:
+  - Papua New Guineans
+  - Papuans
+PY:
+  :name: Paraguay
+  :aplha3: PRY
+  :numeric: '600'
+  :altnames: 
+  :adjectivals:
+  - Paraguayan
+  :demonyms:
+  - Paraguayans
+PE:
+  :name: Peru
+  :aplha3: PER
+  :numeric: '604'
+  :altnames: 
+  :adjectivals:
+  - Peruvian
+  :demonyms:
+  - Peruvians
+PH:
+  :name: Philippines
+  :aplha3: PHL
+  :numeric: '608'
+  :altnames: 
+  :adjectivals:
+  - Philippine
+  - Filipino
+  :demonyms:
+  - Filipinos
+  - Filipinas
+PN:
+  :name: Pitcairn
+  :aplha3: PCN
+  :numeric: '612'
+  :altnames: 
+  :adjectivals:
+  - Pitcairn Island
+  :demonyms:
+  - Pitcairn Islanders
+PL:
+  :name: Poland
+  :aplha3: POL
+  :numeric: '616'
+  :altnames: 
+  :adjectivals:
+  - Polish
+  :demonyms:
+  - Poles
+PT:
+  :name: Portugal
+  :aplha3: PRT
+  :numeric: '620'
+  :altnames: 
+  :adjectivals:
+  - Portuguese
+  :demonyms:
+  - Portuguese
+PR:
+  :name: Puerto Rico
+  :aplha3: PRI
+  :numeric: '630'
+  :altnames: 
+  :adjectivals:
+  - Puerto Rican
+  :demonyms:
+  - Puerto Ricans
+  - Boricuas
+QA:
+  :name: Qatar
+  :aplha3: QAT
+  :numeric: '634'
+  :altnames: 
+  :adjectivals:
+  - Qatari
+  :demonyms:
+  - Qataris
+RE:
+  :name: Reunion
+  :aplha3: REU
+  :numeric: '638'
+  :altnames: 
+  :adjectivals:
+  - Réunionese
+  - Réunionnais
+  :demonyms:
+  - Réunionese
+  - Réunionnais
+RO:
+  :name: Romania
+  :aplha3: ROU
+  :numeric: '642'
+  :altnames: 
+  :adjectivals:
+  - Romanian
+  :demonyms:
+  - Romanians
+RU:
+  :name: Russian Federation
+  :aplha3: RUS
+  :numeric: '643'
+  :altnames: 
+  :adjectivals:
+  - Russian
+  :demonyms:
+  - Russians
+RW:
+  :name: Rwanda
+  :aplha3: RWA
+  :numeric: '646'
+  :altnames: 
+  :adjectivals:
+  - Rwandan
+  :demonyms:
+  - Rwandans
+BL:
+  :name: Saint Barthelemy
+  :aplha3: BLM
+  :numeric: '703'
+  :altnames:
+  - Saint Barts
+  - Saint Barths
+  :adjectivals:
+  - Barthélemoise
+  :demonyms:
+  - Barthélemoise
+SH:
+  :name: Saint Helena
+  :aplha3: SHN
+  :numeric: '654'
+  :altnames: 
+  :adjectivals:
+  - St. Helenian
+  :demonyms:
+  - St. Helenians
+KN:
+  :name: Saint Kitts and Nevis
+  :aplha3: KNA
+  :numeric: '659'
+  :altnames: 
+  :adjectivals:
+  - Kittitian
+  - Nevisian
+  :demonyms:
+  - Kittitians
+  - Nevisians
+LC:
+  :name: Saint Lucia
+  :aplha3: LCA
+  :numeric: '662'
+  :altnames: 
+  :adjectivals:
+  - St. Lucian
+  :demonyms:
+  - St. Lucians
+MF:
+  :name: Saint Pierre and Miquelon
+  :aplha3: SPM
+  :numeric: '666'
+  :altnames: 
+  :adjectivals:
+  - Saint-Pierrais
+  - Miquelonnais
+  :demonyms:
+  - Saint-Pierrais
+  - Miquelonnais
+VC:
+  :name: Saint Vincent and The Grenadines
+  :aplha3: VCT
+  :numeric: '670'
+  :altnames: 
+  :adjectivals:
+  - St. Vincentian
+  - Vincentian
+  :demonyms:
+  - St. Vincentians
+  - Vincentians
+WS:
+  :name: Samoa
+  :aplha3: WSM
+  :numeric: '882'
+  :altnames: 
+  :adjectivals:
+  - Samoan
+  :demonyms:
+  - Samoans
+SM:
+  :name: San Marino
+  :aplha3: SMR
+  :numeric: '674'
+  :altnames: 
+  :adjectivals:
+  - Sammarinese
+  :demonyms:
+  - Sammarinese
+ST:
+  :name: Sao Tome and Principe
+  :aplha3: STP
+  :numeric: '678'
+  :altnames: 
+  :adjectivals:
+  - São Toméan
+  :demonyms:
+  - São Toméans
+SA:
+  :name: Saudi Arabia
+  :aplha3: SAU
+  :numeric: '682'
+  :altnames: 
+  :adjectivals:
+  - Saudi
+  - Saudi Arabian
+  :demonyms:
+  - Saudis
+  - Saudi Arabians
+SN:
+  :name: Senegal
+  :aplha3: SEN
+  :numeric: '686'
+  :altnames: 
+  :adjectivals:
+  - Senegalese
+  :demonyms:
+  - Senegalese
+RS:
+  :name: Serbia
+  :aplha3: SRB
+  :numeric: '688'
+  :altnames: 
+  :adjectivals:
+  - Serbian
+  :demonyms:
+  - Serbians
+  - Serbs
+SC:
+  :name: Seychelles
+  :aplha3: SYC
+  :numeric: '690'
+  :altnames: 
+  :adjectivals:
+  - Seychellois
+  :demonyms:
+  - Seychellois
+SL:
+  :name: Sierra Leone
+  :aplha3: SLE
+  :numeric: '694'
+  :altnames: 
+  :adjectivals:
+  - Sierra Leonean
+  :demonyms:
+  - Sierra Leoneans
+SG:
+  :name: Singapore
+  :aplha3: SGP
+  :numeric: '702'
+  :altnames: 
+  :adjectivals:
+  - Singapore
+  :demonyms:
+  - Singaporeans
+SK:
+  :name: Slovakia
+  :aplha3: SVK
+  :numeric: '703'
+  :altnames: 
+  :adjectivals:
+  - Slovak
+  :demonyms:
+  - Slovaks
+SI:
+  :name: Slovenia
+  :aplha3: SVN
+  :numeric: '705'
+  :altnames: 
+  :adjectivals:
+  - Slovenian
+  - Slovene
+  :demonyms:
+  - Slovenians
+  - Slovenes
+SB:
+  :name: Solomon Islands
+  :aplha3: SLB
+  :numeric: '90'
+  :altnames: 
+  :adjectivals:
+  - Solomon Island
+  :demonyms:
+  - Solomon Islanders
+SO:
+  :name: Somalia
+  :aplha3: SOM
+  :numeric: '706'
+  :altnames: 
+  :adjectivals:
+  - Somali
+  :demonyms:
+  - Somalian
+  - Somalis
+ZA:
+  :name: South Africa
+  :aplha3: ZAF
+  :numeric: '710'
+  :altnames: 
+  :adjectivals:
+  - South African
+  :demonyms:
+  - South Africans
+SS:
+  :name: South Sudan
+  :aplha3: SSD
+  :numeric: '728'
+  :altnames: 
+  :adjectivals:
+  - South Sudanese
+  :demonyms:
+  - South Sudanese
+ES:
+  :name: Spain
+  :aplha3: ESP
+  :numeric: '724'
+  :altnames: 
+  :adjectivals:
+  - Spanish
+  :demonyms:
+  - Spaniards
+LK:
+  :name: Sri Lanka
+  :aplha3: LKA
+  :numeric: '144'
+  :altnames: 
+  :adjectivals:
+  - Sri Lankan
+  :demonyms:
+  - Sri Lankans
+SD:
+  :name: Sudan
+  :aplha3: SDN
+  :numeric: '729'
+  :altnames: 
+  :adjectivals:
+  - Sudanese
+  :demonyms:
+  - Sudanese
+SR:
+  :name: Suriname
+  :aplha3: SUR
+  :numeric: '740'
+  :altnames: 
+  :adjectivals:
+  - Surinamese
+  :demonyms:
+  - Surinamers
+SZ:
+  :name: Swaziland
+  :aplha3: SWZ
+  :numeric: '748'
+  :altnames: 
+  :adjectivals:
+  - Swazi
+  :demonyms:
+  - Swazis
+SE:
+  :name: Sweden
+  :aplha3: SWE
+  :numeric: '752'
+  :altnames: 
+  :adjectivals:
+  - Swedish
+  :demonyms:
+  - Swedes
+CH:
+  :name: Switzerland
+  :aplha3: CHE
+  :numeric: '756'
+  :altnames: 
+  :adjectivals:
+  - Swiss
+  :demonyms:
+  - Swiss
+SY:
+  :name: Syrian Arab Republic
+  :aplha3: SYR
+  :numeric: '760'
+  :altnames: 
+  :adjectivals:
+  - Syrian
+  :demonyms:
+  - Syrians
+TW:
+  :name: Taiwan
+  :aplha3: TWN
+  :numeric: '158'
+  :altnames: 
+  :adjectivals:
+  - Taiwanese
+  :demonyms:
+  - Taiwanese
+TJ:
+  :name: Tajikistan
+  :aplha3: TJK
+  :numeric: '762'
+  :altnames: 
+  :adjectivals:
+  - Tajikistani
+  :demonyms:
+  - Tajikistanis
+  - Tajiks
+TZ:
+  :name: Tanzania
+  :aplha3: TZA
+  :numeric: '834'
+  :altnames: 
+  :adjectivals:
+  - Tanzanian
+  :demonyms:
+  - Tanzanians
+TH:
+  :name: Thailand
+  :aplha3: THA
+  :numeric: '764'
+  :altnames: 
+  :adjectivals:
+  - Thai
+  :demonyms:
+  - Thai
+TL:
+  :name: Timor-Leste
+  :aplha3: TLS
+  :numeric: '626'
+  :altnames: 
+  :adjectivals:
+  - Timorese
+  :demonyms:
+  - Timorese
+TG:
+  :name: Togo
+  :aplha3: TGO
+  :numeric: '768'
+  :altnames: 
+  :adjectivals:
+  - Togolese
+  :demonyms:
+  - Togolese
+TK:
+  :name: Tokelau
+  :aplha3: TKL
+  :numeric: '772'
+  :altnames: 
+  :adjectivals:
+  - Tokelauan
+  :demonyms:
+  - Tokelauan
+TO:
+  :name: Tonga
+  :aplha3: TON
+  :numeric: '776'
+  :altnames: 
+  :adjectivals:
+  - Tongan
+  :demonyms:
+  - Tongans
+TT:
+  :name: Trinidad and Tobago
+  :aplha3: TTO
+  :numeric: '780'
+  :altnames: 
+  :adjectivals:
+  - Trinidadian
+  - Tobagonian
+  :demonyms:
+  - Trinidadians
+  - Tobagonians
+  - Trinis
+  - Trinibagonian
+TN:
+  :name: Tunisia
+  :aplha3: TUN
+  :numeric: '788'
+  :altnames: 
+  :adjectivals:
+  - Tunisian
+  :demonyms:
+  - Tunisians
+TR:
+  :name: Turkey
+  :aplha3: TUR
+  :numeric: '792'
+  :altnames: 
+  :adjectivals:
+  - Turkish
+  :demonyms:
+  - Turks
+TM:
+  :name: Turkmenistan
+  :aplha3: TKM
+  :numeric: '795'
+  :altnames: 
+  :adjectivals:
+  - Turkmen
+  :demonyms:
+  - Turkmens
+TC:
+  :name: Turks and Caicos Islands
+  :aplha3: TCA
+  :numeric: '796'
+  :altnames:
+  - Turks Islands
+  - Caicos Islands
+  :adjectivals: 
+  :demonyms:
+  - Turks and Caicos Islanders
+  - Turks Islanders
+  - Caicos Islanders
+TV:
+  :name: Tuvalu
+  :aplha3: TUV
+  :numeric: '798'
+  :altnames: 
+  :adjectivals:
+  - Tuvaluan
+  :demonyms:
+  - Tuvaluans
+UG:
+  :name: Uganda
+  :aplha3: UGA
+  :numeric: '800'
+  :altnames: 
+  :adjectivals:
+  - Ugandan
+  :demonyms:
+  - Ugandans
+UA:
+  :name: Ukraine
+  :aplha3: UKR
+  :numeric: '804'
+  :altnames: 
+  :adjectivals:
+  - Ukrainian
+  :demonyms:
+  - Ukrainians
+AE:
+  :name: United Arab Emirates
+  :aplha3: ARE
+  :numeric: '784'
+  :altnames: 
+  :adjectivals:
+  - Emirati
+  - Emirian
+  :demonyms:
+  - Emiratis
+  - Emirians
+GB:
+  :name: United Kingdom
+  :aplha3: GBR
+  :numeric: '826'
+  :altnames:
+  - UK
+  - U.K
+  - Great Britain
+  - Britain
+  :adjectivals:
+  - British
+  - Scotish
+  - Irish
+  - English
+  - Welsh
+  :demonyms:
+  - Britons
+  - Scotish
+  - Irish
+  - English
+  - Welsh
+US:
+  :name: United States
+  :aplha3: USA
+  :numeric: '840'
+  :altnames:
+  - USA
+  - U.S.A
+  :adjectivals:
+  - American
+  - U.S
+  :demonyms:
+  - Americans
+UM:
+  :name: United States Minor Outlying Islands
+  :aplha3: UMI
+  :numeric: '581'
+  :altnames: 
+  :adjectivals:
+  - American Islander
+  :demonyms:
+  - American Islander
+UY:
+  :name: Uruguay
+  :aplha3: URY
+  :numeric: '858'
+  :altnames: 
+  :adjectivals:
+  - Uruguayan
+  :demonyms:
+  - Uruguayans
+UZ:
+  :name: Uzbekistan
+  :aplha3: UZB
+  :numeric: '860'
+  :altnames: 
+  :adjectivals:
+  - Uzbekistani
+  - Uzbek
+  :demonyms:
+  - Uzbekistanis
+  - Uzbeks
+VU:
+  :name: Vanuatu
+  :aplha3: VUT
+  :numeric: '548'
+  :altnames: 
+  :adjectivals:
+  - Ni-Vanuatu
+  - Vanuatuan
+  :demonyms:
+  - Ni-Vanuatu
+VE:
+  :name: Venezuela
+  :aplha3: VEN
+  :numeric: '862'
+  :altnames: 
+  :adjectivals:
+  - Venezuelan
+  :demonyms:
+  - Venezuelans
+VN:
+  :name: Viet Nam
+  :aplha3: VNM
+  :numeric: '704'
+  :altnames: 
+  :adjectivals:
+  - Vietnamese
+  :demonyms:
+  - Vietnamese
+VG:
+  :name: British Virgin Islands
+  :aplha3: VGB
+  :numeric: '92'
+  :altnames: 
+  :adjectivals:
+  - British Virgin Island
+  :demonyms:
+  - British Virgin Islanders
+VI:
+  :name: United States Virgin Islands
+  :aplha3: VIR
+  :numeric: '850'
+  :altnames: 
+  :adjectivals:
+  - Virgin Island
+  :demonyms:
+  - Virgin Islanders
+WF:
+  :name: Wallis and Futuna
+  :aplha3: WLF
+  :numeric: '876'
+  :altnames: 
+  :adjectivals:
+  - Wallisian
+  - Futunan
+  :demonyms:
+  - Wallisians
+  - Futunans
+EH:
+  :name: Western Sahara
+  :aplha3: ESH
+  :numeric: '732'
+  :altnames: 
+  :adjectivals:
+  - Sahraw
+  - Sahrawian
+  - Sahraouian
+  :demonyms:
+  - Sahrawis
+  - Sahraouis
+YE:
+  :name: Yemen
+  :aplha3: YEM
+  :numeric: '887'
+  :altnames: 
+  :adjectivals:
+  - Yemeni
+  :demonyms:
+  - Yemenis
+ZM:
+  :name: Zambia
+  :aplha3: ZMB
+  :numeric: '894'
+  :altnames: 
+  :adjectivals:
+  - Zambian
+  :demonyms:
+  - Zambians
+ZW:
+  :name: Zimbabwe
+  :aplha3: ZWE
+  :numeric: '716'
+  :altnames: 
+  :adjectivals:
+  - Zimbabwean
+  :demonyms:
+  - Zimbabweans
