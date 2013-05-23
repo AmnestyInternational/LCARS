@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '15m', :first_in => 35 do |job|
+SCHEDULER.every '15m', :first_in => 37 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :timeout => 120000)
   results = client.execute("
     USE iMIS
@@ -50,15 +50,14 @@ SCHEDULER.every '15m', :first_in => 35 do |job|
     lastmonth[row['Type']] = row['Count']
   end
   
-  puts currentmonth.inspect
-  puts lastmonth.inspect
-  
-  send_event('iMIS_calls_month-to-date', { current: currentmonth['1800'] + currentmonth['TIGERTEL'], last: lastmonth['1800'] + lastmonth['TIGERTEL'] })  
-  send_event('iMIS_phone_month-to-date', { current: currentmonth['PHONE'], last: lastmonth['PHONE'] })  
-  send_event('iMIS_mail_month-to-date', { current: currentmonth['EMAIL'], last: lastmonth['EMAIL'] })  
-  send_event('iMIS_coupon_month-to-date', { current: currentmonth['COUPON'], last: lastmonth['COUPON'] })  
-  send_event('iMIS_in_person_month-to-date', { current: currentmonth['IN_PERSON'], last: lastmonth['IN_PERSON'] })  
-  send_event('iMIS_web_month-to-date', { current: currentmonth['WEB'] + currentmonth['WEB_CONTACT_FORM'], last: lastmonth['WEB'] + lastmonth['WEB_CONTACT_FORM'] })
+  send_event('iMIS_1800_month-to-date', { current: currentmonth['1800'], last: lastmonth['1800'] })
+  send_event('iMIS_TIGERTEL_month-to-date', { current: currentmonth['TIGERTEL'], last: lastmonth['TIGERTEL'] })
+  send_event('iMIS_phone_month-to-date', { current: currentmonth['PHONE'], last: lastmonth['PHONE'] })
+  send_event('iMIS_mail_month-to-date', { current: currentmonth['EMAIL'], last: lastmonth['EMAIL'] })
+  send_event('iMIS_coupon_month-to-date', { current: currentmonth['COUPON'], last: lastmonth['COUPON'] })
+  send_event('iMIS_in_person_month-to-date', { current: currentmonth['IN_PERSON'], last: lastmonth['IN_PERSON'] })
+  send_event('iMIS_web_month-to-date', { current: currentmonth['WEB'], last: lastmonth['WEB'] })
+  send_event('iMIS_web_contact_form_month-to-date', { current: currentmonth['WEB_CONTACT_FORM'], last: lastmonth['WEB_CONTACT_FORM'] })
 
 end
 

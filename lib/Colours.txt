@@ -1,0 +1,48 @@
+Light Red
+#F26C4F
+
+Light Red Orange	
+#F68E55
+ 	
+Light Yellow Orange
+#FBAF5C
+ 	
+Light Yellow
+#FFF467
+ 	
+Light Pea Green
+#ACD372
+ 	
+Light Yellow Green
+#7CC576
+ 	
+Light Green
+#3BB878
+ 	
+Light Green Cyan
+#1ABBB4
+ 	
+Light Cyan
+#00BFF3
+ 	
+Light Cyan Blue
+#438CCA
+ 	
+Light Blue
+#5574B9
+	
+Light Blue Violet
+#605CA8
+
+Light Violet
+#855FA8
+ 	
+Light Violet Magenta
+#A763A8
+ 	
+Light Magenta
+#F06EA9
+ 	
+Light Magenta Red
+#F26D7D
+
