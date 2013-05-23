@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '10m', :first_in => 200 do |job|
+SCHEDULER.every '12h', :first_in => 200 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     DECLARE @since DATE = DATEADD(DAY, -30, GETDATE())
