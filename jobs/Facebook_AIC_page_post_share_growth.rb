@@ -5,14 +5,14 @@ require 'tiny_tds'
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
 points = []
-(1..72).each do |i|
-  points << { x: i, y: 0 }
+(1..72).each do | i |
+  points << { x: i * 60 * 10, y: 0 }
 end
 last_x = points.last[:x]
 
 SCHEDULER.every '10m', :first_in => 110 do |job|
   points.shift
-  last_x += 1
+  last_x += 60 * 10
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
   result = client.execute("
