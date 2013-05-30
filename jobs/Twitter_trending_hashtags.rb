@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '60m', :first_in => 600 do |job|
+SCHEDULER.every '60m', :first_in => 0 do |job|
   twitter_trends = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
@@ -18,7 +18,7 @@ SCHEDULER.every '60m', :first_in => 600 do |job|
       ON T.id = TA.tweet_id
     WHERE
       TA.term LIKE '#%' AND
-      T.text LIKE '%Amnesty%International%' AND
+      T.text LIKE '%Amnesty%' AND
       T.created > DATEADD(DAY, -7, GETDATE()) AND
       TA.term NOT IN ('#Amnesty','#AmnestyInternational')
     GROUP BY TA.term
