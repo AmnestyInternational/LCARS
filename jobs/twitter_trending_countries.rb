@@ -32,7 +32,7 @@ def loadtweets
 
   result = client.execute("
     SELECT text
-    FROM externaldata.dbo.tweets
+    FROM vAI_CanadianTweets
     WHERE
       (text LIKE '%Amnesty%International%' OR
       text LIKE '%@Amnesty%') AND
