@@ -11,10 +11,10 @@ SCHEDULER.every '60m', :first_in => 120 do |job|
   USE externaldata
 
   SELECT TOP 5 usr_name, text, profile_image_url
-  FROM tweets
+  FROM vAI_CanadianTweets
   WHERE RIGHT(text,25) IN (
     SELECT TOP 5 RIGHT(text,25)
-    FROM tweets
+    FROM vAI_CanadianTweets
     WHERE
       text LIKE '%Amnesty%International%' AND
       imported >= DATEADD(WEEK, -1, GETDATE())
