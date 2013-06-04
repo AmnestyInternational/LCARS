@@ -12,7 +12,7 @@ SCHEDULER.every '60m', :first_in => 39 do |job|
     USE externaldata
     SELECT TOP 7 TA.term, COUNT(TA.term) 'Count'
     FROM
-      tweets AS T
+      vAI_CanadianTweets AS T
       INNER JOIN
       tweetsanatomize AS TA
       ON T.id = TA.tweet_id
@@ -36,7 +36,7 @@ SCHEDULER.every '60m', :first_in => 39 do |job|
     USE externaldata
     SELECT TOP 7 TA.term, COUNT(TA.term) 'Count'
     FROM
-      tweets AS T
+      vAI_CanadianTweets AS T
       INNER JOIN
       tweetsanatomize AS TA
       ON T.id = TA.tweet_id
