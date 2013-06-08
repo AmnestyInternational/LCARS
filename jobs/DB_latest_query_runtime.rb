@@ -7,15 +7,14 @@ yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 SCHEDULER.every '5m', :first_in => 37 do |job|
   lastqueryrun = []
 
-  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
-    USE externaldata
     SELECT
      (SELECT MAX(updated) FROM fb_link_count) 'fb_link_count',
      (SELECT MAX(updated_time) FROM fb_page_post) 'fb_page_post',
      (SELECT MAX(updated) FROM fb_page_post_stat) 'fb_page_post_stat',
      (SELECT MAX(imported) FROM tweets) 'tweets',
-     (SELECT MAX(max_id) FROM TweetsRefreshUrl) 'max_id',
+     (SELECT MAX(id) FROM Tweets) 'max_id',
      (SELECT MAX(imported) FROM ENsupportersActivities) 'EN_activities'")
   
   counts = result.first
