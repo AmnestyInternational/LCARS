@@ -61,8 +61,6 @@ def countoccurances(concepts, text)
 end
 
 countries = loadcountries
- 
-yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
 SCHEDULER.every '120m', :first_in => 371 do |job|
   twitter_countries = []

@@ -7,16 +7,14 @@ yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 SCHEDULER.every '10m', :first_in => 355 do |job|
   tweetusers = []
 
-  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
-    USE externaldata
-
     SELECT TOP 18 TA.term 'user', COUNT(DISTINCT(TA.tweet_id)) 'RTCount'
     FROM
       vAI_CanadianTweets AS T1
       INNER JOIN
       TweetsAnatomize AS TA
-      ON '@' + T1.usr = TA.term
+      ON '@' + T1.screen_name = TA.term
       INNER JOIN
       vAI_CanadianTweets AS T2
       ON TA.tweet_id = T2.id
