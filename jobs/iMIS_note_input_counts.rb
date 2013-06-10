@@ -26,7 +26,7 @@ SCHEDULER.every '10m', :first_in => 115 do |job|
     ORDER BY COUNT('SEQN') DESC
     ")
 
-  result.each do |row|
+  result.each do | row |
     inputcounts << {:label=>row['Name'], :value=>row['Count']}
   end
 
@@ -34,10 +34,12 @@ SCHEDULER.every '10m', :first_in => 115 do |job|
 
 end
 
-SCHEDULER.every '5m', :first_in => 71 do |job|
+SCHEDULER.every '5m', :first_in => 79 do |job|
   msvinputcounts = []
 
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
+    USE iMIS
     SELECT UF_2 'Note_type', COUNT(SEQN) 'Count'
     FROM Activity
     WHERE
@@ -51,7 +53,7 @@ SCHEDULER.every '5m', :first_in => 71 do |job|
     GROUP BY UF_2
     ")
 
-  result.each do |row|
+  result.each do | row |
     msvinputcounts << {:label=>row['Note_type'], :value=>row['Count']}
   end
 
