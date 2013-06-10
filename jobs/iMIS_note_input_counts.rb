@@ -40,7 +40,7 @@ SCHEDULER.every '5m', :first_in => 79 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     USE iMIS
-    SELECT UF_2 'Note_type', COUNT(SEQN) 'Count'
+    SELECT PRODUCT_CODE 'Note_type', COUNT(SEQN) 'Count'
     FROM Activity
     WHERE
       UF_3 = 'Member Services Volunteer' AND
@@ -50,7 +50,7 @@ SCHEDULER.every '5m', :first_in => 79 do |job|
         WHERE
          TRANSACTION_DATE >= CAST(GETDATE() AS DATE) AND
          TRANSACTION_DATE <= GETDATE())
-    GROUP BY UF_2
+    GROUP BY PRODUCT_CODE
     ")
 
   result.each do | row |
