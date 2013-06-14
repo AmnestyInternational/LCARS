@@ -7,9 +7,8 @@ yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 SCHEDULER.every '6h', :first_in => 75 do |job|
   newcyberactivistscount = []
 
-  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
-    USE externaldata
     -- New cyber activists by day
     SELECT supporter_create_date, COUNT(supporter_id) 'Count'
     FROM ENsupporters
@@ -36,9 +35,8 @@ end
 SCHEDULER.every '6h', :first_in => 93 do |job|
   newonlinedonorscount = []
 
-  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
-    USE externaldata
     -- New online donors by day
     SELECT supporter_create_date, COUNT(supporter_id) 'Count'
     FROM ENsupporters
@@ -60,12 +58,11 @@ SCHEDULER.every '6h', :first_in => 93 do |job|
 end
 
 
-SCHEDULER.every '6h', :first_in => 43 do |job|
+SCHEDULER.every '6h', :first_in => 43 do | job |
   topcyberactions = []
 
-  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'])
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
-    USE externaldata
     -- Top 7 cyber actions in past 7 days
     SELECT TOP 7 LEFT(id, 15) 'Action', COUNT(supporter_id) 'Count'
     FROM ENsupportersActivities
@@ -84,6 +81,31 @@ SCHEDULER.every '6h', :first_in => 43 do |job|
 end
 
 
+SCHEDULER.every '6h', :first_in => 147 do | job |
 
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
+  result = client.execute("
+    SELECT ESA2.id 'action', (LEFT(ESA1.data1, 300) + '...') 'comment' 
+    FROM
+      ENsupportersActivities AS ESA1
+      INNER JOIN
+      ENsupportersActivities AS ESA2
+      ON
+        ESA1.datetime = ESA2.datetime AND
+        ESA1.supporter_id = ESA2.supporter_id
+    WHERE
+      ESA1.type = 'QM' AND
+      ESA2.type IN ('DC','ET') AND
+      ESA1.datetime >= DATEADD(DAY, -2, GETDATE())")
+
+  encomments = Array.new
+
+  result.each do | row |
+    encomments << {name: row['action'], body: row['comment']}
+  end
+
+  send_event('EN_Comments', comments: encomments)
+
+end
 
 
