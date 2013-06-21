@@ -80,7 +80,6 @@ SCHEDULER.every '6h', :first_in => 43 do | job |
 
 end
 
-
 SCHEDULER.every '6h', :first_in => 147 do | job |
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -107,5 +106,3 @@ SCHEDULER.every '6h', :first_in => 147 do | job |
   send_event('EN_Comments', comments: encomments)
 
 end
-
-
