@@ -84,7 +84,14 @@ SCHEDULER.every '6h', :first_in => 147 do | job |
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
-    SELECT ESA2.id 'action', (LEFT(ESA1.data1, 300) + '...') 'comment' 
+    SELECT
+      ESA2.id 'action',
+      CASE WHEN LEN(ESA1.data1) > 300
+      THEN
+        (LEFT(ESA1.data1, 300) + '...')
+      ELSE
+        ESA1.data1
+      END 'comment' 
     FROM
       ENsupportersActivities AS ESA1
       INNER JOIN
@@ -95,7 +102,10 @@ SCHEDULER.every '6h', :first_in => 147 do | job |
     WHERE
       ESA1.type = 'QM' AND
       ESA2.type IN ('DC','ET') AND
-      ESA1.datetime >= DATEADD(DAY, -2, GETDATE())")
+      ESA1.datetime >= DATEADD(DAY, -2, GETDATE()) AND
+      ESA1.data1 NOT LIKE '%<%>%' AND
+      ESA1.data1 NOT IN ('0')
+   GROUP BY ESA2.id, ESA1.data1")
 
   encomments = Array.new
 
