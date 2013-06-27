@@ -4,7 +4,7 @@ require 'tiny_tds'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '35m', :first_in => 0 do |job|
+SCHEDULER.every '33m', :first_in => 203 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     USE suku
@@ -18,7 +18,7 @@ SCHEDULER.every '35m', :first_in => 0 do |job|
 end
 
 
-SCHEDULER.every '35m', :first_in => 0 do |job|
+SCHEDULER.every '34m', :first_in => 113 do |job|
   reports_per_user = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -47,7 +47,7 @@ SCHEDULER.every '35m', :first_in => 0 do |job|
 end
 
 
-SCHEDULER.every '35m', :first_in => 0 do |job|
+SCHEDULER.every '35m', :first_in => 84 do |job|
   reports_per_tag = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -72,7 +72,7 @@ SCHEDULER.every '35m', :first_in => 0 do |job|
 end
 
 
-SCHEDULER.every '35m', :first_in => 0 do |job|
+SCHEDULER.every '36m', :first_in => 103 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     USE suku
@@ -85,7 +85,7 @@ SCHEDULER.every '35m', :first_in => 0 do |job|
 end
 
 
-SCHEDULER.every '37m', :first_in => 0 do |job|
+SCHEDULER.every '37m', :first_in => 93 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   results = client.execute("
     USE suku
@@ -110,7 +110,7 @@ SCHEDULER.every '37m', :first_in => 0 do |job|
 end
 
 
-SCHEDULER.every '35m', :first_in => 0 do |job|
+SCHEDULER.every '38m', :first_in => 192 do |job|
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
@@ -147,7 +147,7 @@ end
 
 
 
-SCHEDULER.every '35m', :first_in => 0 do |job|
+SCHEDULER.every '39m', :first_in => 199 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   results = client.execute("
     USE suku
