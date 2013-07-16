@@ -94,7 +94,7 @@ SCHEDULER.every '30m', :first_in => 167 do |job|
 end
 
 
-SCHEDULER.every '30m', :first_in => 3 do |job|
+SCHEDULER.every '30m', :first_in => 272 do |job|
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 15000)
   result = client.execute("
@@ -135,7 +135,7 @@ SCHEDULER.every '30m', :first_in => 3 do |job|
 end
 
 
-SCHEDULER.every '30m', :first_in => 3 do |job|
+SCHEDULER.every '30m', :first_in => 234 do |job|
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 15000)
   result = client.execute("
