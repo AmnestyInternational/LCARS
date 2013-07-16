@@ -24,7 +24,9 @@ SCHEDULER.every '34m', :first_in => 113 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     USE suku
-    SELECT (u.first_name + ' ' + u.last_name) 'User', SUM(ql.runs) 'Reports run'
+    SELECT
+      UPPER(LEFT(u.email, 1)) + '. ' + UPPER(SUBSTRING(u.email, 2, 1)) + REPLACE(RIGHT(u.email, LEN(u.email)-2), '@amnesty.ca', '') 'User',
+      SUM(ql.runs) 'Reports run'
     FROM
       sql_runner.query_logs AS ql
       INNER JOIN
@@ -33,8 +35,10 @@ SCHEDULER.every '34m', :first_in => 113 do |job|
       INNER JOIN
       sql_runner.report_queries AS rq
       ON rq.id = ql.report_query_id
-    WHERE ql.user_id NOT IN (8,9)
-    GROUP BY u.first_name, u.last_name
+    WHERE
+      ql.user_id NOT IN (8,9) AND
+      u.email LIKE  '%@amnesty.ca'
+    GROUP BY u.email
     ORDER BY 'Reports run' DESC
   ")
 
