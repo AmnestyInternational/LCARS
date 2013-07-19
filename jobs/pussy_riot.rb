@@ -188,6 +188,7 @@ SCHEDULER.every '10m', :first_in => 7 do |job|
 end
 
 
+=begin
 SCHEDULER.every '30m', :first_in => 5 do |job|
   http = Net::HTTP.new('ajax.googleapis.com')
   response = http.request(Net::HTTP::Get.new("/ajax/services/feed/load?v=1.0&q=https://news.google.ca/news/feeds?q=pussy+riot&hl=en&gl=ca&authuser=0&cr=countryCA&bav=on.2,or.r_cp.r_qf.&bvm=bv.49478099,d.aWM,pv.xjs.s.en_US.c75bKy5EQ0A.O&biw=1680&bih=963&um=1&ie=UTF-8&output=rss"))
@@ -203,6 +204,7 @@ SCHEDULER.every '30m', :first_in => 5 do |job|
 end
 
 # http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=https://news.google.ca/news/feeds?q=pussy+riot&hl=en&gl=ca&authuser=0&cr=countryCA&bav=on.2,or.r_cp.r_qf.&bvm=bv.49478099,d.aWM,pv.xjs.s.en_US.c75bKy5EQ0A.O&biw=1680&bih=963&um=1&ie=UTF-8&output=rss
+=end
 
 
 SCHEDULER.every '30m', :first_in => 6 do |job|
