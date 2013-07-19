@@ -17,7 +17,6 @@ SCHEDULER.every '10m', :first_in => 1 do |job|
      text LIKE '%pussy%riot%'
     ORDER BY created DESC")
 
-
   result.each do |row|
     recenttweets << { :name=>row['usr_name'], :body=>row['text'], :avatar=>row['profile_image_url'] }
   end
@@ -161,6 +160,7 @@ SCHEDULER.every '30m', :first_in => 6 do |job|
   send_event('Twitter_Canadian_Pussy_Riot_retweeted_users_1d', { items: retweetedusers })
 
 end
+
 
 
 SCHEDULER.every '10m', :first_in => 7 do |job|
