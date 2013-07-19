@@ -204,3 +204,24 @@ end
 
 # http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=https://news.google.ca/news/feeds?q=pussy+riot&hl=en&gl=ca&authuser=0&cr=countryCA&bav=on.2,or.r_cp.r_qf.&bvm=bv.49478099,d.aWM,pv.xjs.s.en_US.c75bKy5EQ0A.O&biw=1680&bih=963&um=1&ie=UTF-8&output=rss
 
+
+SCHEDULER.every '30m', :first_in => 6 do |job|
+  tweetspercity = []
+
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
+  result = client.execute("
+    -- Twitter_Canadian_Pussy_Riot_Tweets_per_city
+    SELECT region 'City', COUNT(id) 'Count'
+    FROM vAI_CanadianTweets
+    WHERE
+      text LIKE '%pussy%riot%'
+    GROUP BY region
+   ORDER BY COUNT(id) DESC")
+
+  result.each do |row|
+    tweetspercity << {:label=>row['City'], :value=>row['Count']}
+  end
+
+  send_event('Twitter_Canadian_Pussy_Riot_Tweets_per_city', { items: tweetspercity })
+
+end
