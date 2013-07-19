@@ -251,10 +251,10 @@ SCHEDULER.every '30m', :first_in => 6 do |job|
     ORDER BY Count DESC")
 
   result.each do |row|
-    canadianartists << {:label=>row['user'], :value=>row['RTCount']}
+    canadianartiststweetcount << {:label=>row['user'], :value=>row['RTCount']}
   end
 
-  send_event('Twitter_Canadian_Pussy_Riot_artists', { items: canadianartists })
+  send_event('Twitter_Canadian_Pussy_Riot_artists', { items: canadianartiststweetcount })
 
 end
 
