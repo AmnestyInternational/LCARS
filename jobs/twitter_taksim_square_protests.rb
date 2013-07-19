@@ -21,7 +21,7 @@ SCHEDULER.every '23h', :first_in => 213 do |job|
       vAI_Tweets AS T2
       ON TA.tweet_id = T2.id
     WHERE
-      T2.created >= DATEADD(HOUR, -24, GETDATE()) AND
+      T2.created >= DATEADD(HOUR, -48, GETDATE()) AND
       T1.region = 'Gezi'
     GROUP BY TA.term
     ORDER BY RTCount DESC")
