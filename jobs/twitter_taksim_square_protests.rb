@@ -6,7 +6,7 @@ require 'instagram'
  
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
-SCHEDULER.every '23h', :first_in => 213 do |job|
+SCHEDULER.every '23h', :first_in => 713 do |job|
   tweetusers = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 240000)
