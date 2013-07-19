@@ -271,7 +271,7 @@ points = []
   points << { x: (i * 60 * 10) + starttime, y: 0 }
 end
 
-SCHEDULER.every '10m', :first_in => 317 do |job|
+SCHEDULER.every '10m', :first_in => 5 do |job|
   points.shift
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
