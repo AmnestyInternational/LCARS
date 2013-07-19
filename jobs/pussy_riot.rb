@@ -186,3 +186,21 @@ SCHEDULER.every '10m', :first_in => 7 do |job|
 
   send_event('Twitter_Canadian_Pussy_Riot_tweets_per_hour', { current: tweetscount['lasthour'], last: tweetscount['previoushour'] })
 end
+
+
+SCHEDULER.every '30m', :first_in => 5 do |job|
+  http = Net::HTTP.new('ajax.googleapis.com')
+  response = http.request(Net::HTTP::Get.new("/ajax/services/feed/load?v=1.0&q=https://news.google.ca/news/feeds?q=pussy+riot&hl=en&gl=ca&authuser=0&cr=countryCA&bav=on.2,or.r_cp.r_qf.&bvm=bv.49478099,d.aWM,pv.xjs.s.en_US.c75bKy5EQ0A.O&biw=1680&bih=963&um=1&ie=UTF-8&output=rss"))
+  newsarticles = JSON.parse(response.body)['responseData']['feed']['entries']
+ 
+  if newsarticles
+    newsarticles.map! do |article| 
+      { name: article['title'], body: article['contentSnippet'] }
+    end
+  
+    send_event('Google_News_feed_Pussy_Riot', comments: newsarticles)
+  end
+end
+
+# http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=https://news.google.ca/news/feeds?q=pussy+riot&hl=en&gl=ca&authuser=0&cr=countryCA&bav=on.2,or.r_cp.r_qf.&bvm=bv.49478099,d.aWM,pv.xjs.s.en_US.c75bKy5EQ0A.O&biw=1680&bih=963&um=1&ie=UTF-8&output=rss
+
