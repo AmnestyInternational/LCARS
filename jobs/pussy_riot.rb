@@ -5,7 +5,7 @@ require 'tiny_tds'
 yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 
 
-SCHEDULER.every '10m', :first_in => 1 do |job|
+SCHEDULER.every '10m', :first_in => 21 do |job|
   recenttweets = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -26,7 +26,7 @@ end
 
 
 
-SCHEDULER.every '30m', :first_in => 2 do |job|
+SCHEDULER.every '30m', :first_in => 42 do |job|
   trendingwords = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -53,7 +53,7 @@ end
 
 
 
-SCHEDULER.every '30m', :first_in => 3 do |job|
+SCHEDULER.every '30m', :first_in => 55 do |job|
   trendinghashtags = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -80,7 +80,7 @@ end
 
 
 
-SCHEDULER.every '30m', :first_in => 4 do |job|
+SCHEDULER.every '30m', :first_in => 34 do |job|
   trendingusermentions = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -110,7 +110,7 @@ end
 
 
 
-SCHEDULER.every '30m', :first_in => 5 do |job|
+SCHEDULER.every '30m', :first_in => 53 do |job|
   influentialusers = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
@@ -120,7 +120,8 @@ SCHEDULER.every '30m', :first_in => 5 do |job|
     FROM vAI_CanadianTweets
     WHERE
       created > DATEADD(DAY, -1, GETDATE()) AND
-      text LIKE '%pussy%riot%'
+      text LIKE '%pussy%riot%' AND
+      followers_count > 100
     ORDER BY followers_count DESC")
 
   result.each do |row|
@@ -132,7 +133,7 @@ end
 
 
 
-SCHEDULER.every '30m', :first_in => 6 do |job|
+SCHEDULER.every '30m', :first_in => 63 do |job|
   retweetedusers = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
@@ -163,7 +164,7 @@ end
 
 
 
-SCHEDULER.every '10m', :first_in => 7 do |job|
+SCHEDULER.every '10m', :first_in => 47 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
   results = client.execute("
     -- Twitter_Canadian_Pussy_Riot_tweets_per_hour
@@ -207,7 +208,7 @@ end
 =end
 
 
-SCHEDULER.every '30m', :first_in => 6 do |job|
+SCHEDULER.every '30m', :first_in => 36 do |job|
   tweetspercity = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
@@ -231,7 +232,7 @@ end
 
 
 
-SCHEDULER.every '30m', :first_in => 6 do |job|
+SCHEDULER.every '30m', :first_in => 76 do |job|
   canadianartiststweetcount = []
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
@@ -271,7 +272,7 @@ points = []
   points << { x: (i * 60 * 10) + starttime, y: 0 }
 end
 
-SCHEDULER.every '10m', :first_in => 5 do |job|
+SCHEDULER.every '10m', :first_in => 25 do |job|
   points.shift
 
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
