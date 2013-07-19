@@ -11,7 +11,7 @@ SCHEDULER.every '10m', :first_in => 1 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     -- Twitter_Canadian_Pussy_Riot_tweets
-    SELECT TOP 10 screen_name, text, profile_image_url
+    SELECT TOP 7 screen_name, text, profile_image_url
     FROM vAI_CanadianTweets
     WHERE
      text LIKE '%pussy%riot%'
