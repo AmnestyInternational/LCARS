@@ -116,7 +116,7 @@ SCHEDULER.every '30m', :first_in => 53 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     -- Twitter_Canadian_Pussy_Riot_influential_users_1d
-    SELECT TOP 18 '@' + screen_name, followers_count
+    SELECT TOP 18 '@' + screen_name 'screen_name', followers_count
     FROM vAI_CanadianTweets
     WHERE
       created > DATEADD(DAY, -1, GETDATE()) AND
@@ -252,7 +252,7 @@ SCHEDULER.every '30m', :first_in => 76 do |job|
     ORDER BY Count DESC")
 
   result.each do |row|
-    canadianartiststweetcount << {:label=>row['user'], :value=>row['RTCount']}
+    canadianartiststweetcount << {:label=>row['name'], :value=>row['RTCount']}
   end
 
   send_event('Twitter_Canadian_Pussy_Riot_artists', { items: canadianartiststweetcount })
