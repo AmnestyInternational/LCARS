@@ -225,3 +225,35 @@ SCHEDULER.every '30m', :first_in => 6 do |job|
   send_event('Twitter_Canadian_Pussy_Riot_Tweets_per_city', { items: tweetspercity })
 
 end
+
+
+
+
+SCHEDULER.every '30m', :first_in => 6 do |job|
+  canadianartiststweetcount = []
+
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
+  result = client.execute("
+    -- Twitter_Canadian_Pussy_Riot_artists
+    SELECT TU.name, COUNT(T.id) 'Count'
+    FROM
+      Tweets AS T
+      INNER JOIN
+      TwitterUsers AS TU
+      ON T.usr_id = TU.id
+    WHERE
+      TU.screen_name IN ('arcadefire','bryanadams','morissette','hidden_cameras','peachesnisker') AND
+      (T.text LIKE '%pussy%riot%' OR T.text LIKE '%amnesty%') AND
+      T.created > DATEADD(DAY, -2, GETDATE())
+    GROUP BY TU.name
+    ORDER BY Count DESC")
+
+  result.each do |row|
+    canadianartists << {:label=>row['user'], :value=>row['RTCount']}
+  end
+
+  send_event('Twitter_Canadian_Pussy_Riot_artists', { items: canadianartists })
+
+end
+
+
