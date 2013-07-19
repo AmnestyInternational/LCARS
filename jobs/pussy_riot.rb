@@ -259,3 +259,31 @@ SCHEDULER.every '30m', :first_in => 6 do |job|
 end
 
 
+
+def seconds_since_midnight
+  (Time.now.hour * 3600) + (Time.now.min * 60) + (Time.now.sec)
+end
+
+starttime = seconds_since_midnight - (36 * 60 * 10)
+
+points = []
+(1..36).each do | i |
+  points << { x: (i * 60 * 10) + starttime, y: 0 }
+end
+
+SCHEDULER.every '10m', :first_in => 317 do |job|
+  points.shift
+
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
+  result = client.execute("
+    SELECT COUNT(DISTINCT(usr_id)) 'count'
+    FROM vAI_CanadianTweets
+    WHERE
+      text LIKE '%pussy%riot%' AND
+      created > DATEADD(MINUTE, -10, GETDATE())")
+
+  points << { x: seconds_since_midnight, y: result.first['count'] }
+
+  send_event('Twitter_Canadian_Pussy_Riot_count', points: points)
+
+end
