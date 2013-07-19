@@ -116,7 +116,7 @@ SCHEDULER.every '30m', :first_in => 5 do |job|
   client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'])
   result = client.execute("
     -- Twitter_Canadian_Pussy_Riot_influential_users_1d
-    SELECT TOP 7 screen_name, followers_count
+    SELECT TOP 18 screen_name, followers_count
     FROM vAI_CanadianTweets
     WHERE
       created > DATEADD(DAY, -1, GETDATE()) AND
