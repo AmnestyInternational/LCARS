@@ -186,5 +186,3 @@ SCHEDULER.every '10m', :first_in => 7 do |job|
 
   send_event('Twitter_Canadian_Pussy_Riot_tweets_per_hour', { current: tweetscount['lasthour'], last: tweetscount['previoushour'] })
 end
-
-
