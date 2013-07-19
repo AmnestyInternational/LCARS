@@ -9,7 +9,7 @@ yml = YAML::load(File.open('lib/db_settings.yml'))['prod_settings']
 SCHEDULER.every '23h', :first_in => 213 do |job|
   tweetusers = []
 
-  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 120000)
+  client = TinyTds::Client.new(:username => yml['username'], :password => yml['password'], :host => yml['host'], :database => yml['database'], :timeout => 240000)
   result = client.execute("
     SELECT TOP 18 TA.term 'user', COUNT(DISTINCT(TA.tweet_id)) 'RTCount'
     FROM
