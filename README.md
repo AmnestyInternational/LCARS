@@ -54,3 +54,5 @@ Start the server!
     $ dashing start
 
 Point your browser at localhost:3030 and have fun!
+
+If you want to run the Dashboard as a service check out this [gist](https://gist.github.com/gregology/5313326).
